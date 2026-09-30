@@ -1,0 +1,1 @@
+{"cpu_percent": 12.5, "ram_used_gb": 2.37, "ram_total_gb": 5.71, "ram_percent": 41.6, "disk_used_gb": 26.7, "disk_total_gb": 145.7, "disk_percent": 18.3, "gpu_label": "Intel Integrated Graphics (shared, no dedicated VRAM)", "gpu_mem_note": "shared system memory — no dedicated VRAM on this host", "uptime_seconds": 42077, "temperature_c": null}
