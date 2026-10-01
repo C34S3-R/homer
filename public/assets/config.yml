@@ -78,6 +78,7 @@ services:
         icon: "fa-mosaic fa-solid fa-bus"
         subtitle: "Create complete 3d models from scratch"
         tag: "Modz"
+        url: "https://delllatitude-e6410.tailc3384f.ts.net:8443"
       - name: "Git streak"
         icon: "fa-solid fa-fire"
         subtitle: "An app that tracks your building collaboration with a friend"
