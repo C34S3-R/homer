@@ -24,6 +24,19 @@ export default defineConfig({
   build: {
     assetsDir: "resources",
   },
+  // Live stats live on the production server (server.py, port 8003).
+  // Proxy /api there so `pnpm dev` / `pnpm preview` show the same live
+  // SysStats card instead of reporting OFFLINE.
+  server: {
+    proxy: {
+      "/api": "http://127.0.0.1:8003",
+    },
+  },
+  preview: {
+    proxy: {
+      "/api": "http://127.0.0.1:8003",
+    },
+  },
   define: {
     __APP_VERSION__: JSON.stringify(version),
   },

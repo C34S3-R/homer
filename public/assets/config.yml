@@ -84,3 +84,14 @@ services:
         subtitle: "An app that tracks your building collaboration with a friend"
         tag: "Streak"
         url: "https://delllatitude-e6410.tailc3384f.ts.net/"
+  - name: "Server Metrics"
+    icon: "fas fa-server"
+    items:
+      - name: "Server"
+        subtitle: "Live system stats"
+        type: "SysStats"
+        # Same-origin backend served by server.py (GET /api/stats).
+        # The service mixin appends "api/stats" to this endpoint, so it
+        # must stay "" (link disabled) or "/" — never an external URL.
+        url: ""
+        updateIntervalMs: 3000

@@ -37,6 +37,12 @@ ENV GID=1000 \
     INIT_ASSETS=1 \
     IPV6_DISABLE=0
 
+# Host running the homepage-stats backend (server.py). The container
+# proxies /api/* there (see lighttpd.conf); default is the Docker bridge
+# gateway, which routes to the host.
+ENV STATS_HOST=172.17.0.1 \
+    STATS_PORT=8003
+
 RUN addgroup -S lighttpd -g ${GID} && adduser -D -S -u ${UID} lighttpd lighttpd && \
     apk add -U --no-cache tzdata lighttpd
 

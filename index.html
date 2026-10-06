@@ -7,6 +7,18 @@
     <link rel="mask-icon" href="assets/icons/logo.svg">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
     <title>Homer</title>
+    <script>
+      // Served at /homer/ behind Tailscale Funnel (and at / on the LAN port).
+      // Without a trailing slash the relative asset URLs would resolve one level
+      // too high (against the root mount), so normalize before anything loads.
+      // Paths containing a dot (e.g. /index.html) are left alone.
+      (function () {
+        var p = location.pathname;
+        if (p.length > 1 && p.charAt(p.length - 1) !== "/" && p.indexOf(".") === -1) {
+          location.replace(p + "/" + location.search + location.hash);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="app-mount"></div>
