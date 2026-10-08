@@ -91,7 +91,7 @@ services:
         icon: "fa-solid fa-film"
         subtitle: "Stream your movie collection from anywhere"
         tag: "media"
-        url: "http://100.113.160.63:8096"
+        url: "https://delllatitude-e6410.tailc3384f.ts.net:8096/?token=52UI7rvL25mJHCZ2EsUr8LFsGud1Q3YO"
   - name: "Server Metrics"
     icon: "fas fa-server"
     items:
