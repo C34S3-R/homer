@@ -91,7 +91,12 @@ services:
         icon: "fa-solid fa-film"
         subtitle: "Stream your movie collection from anywhere"
         tag: "media"
-        url: "https://delllatitude-e6410.tailc3384f.ts.net:8096/?token=52UI7rvL25mJHCZ2EsUr8LFsGud1Q3YO"
+        url: "https://delllatitude-e6410.tailc3384f.ts.net/jellyfin/web/"
+      - name: "MediaBox"
+        icon: "fa-solid fa-folder-open"
+        subtitle: "Simple file browser for the USB stick"
+        tag: "media"
+        url: "https://delllatitude-e6410.tailc3384f.ts.net/movies/?token=52UI7rvL25mJHCZ2EsUr8LFsGud1Q3YO"
   - name: "Server Metrics"
     icon: "fas fa-server"
     items:
