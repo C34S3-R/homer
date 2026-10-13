@@ -4,7 +4,7 @@
 
 title: "Home server"
 subtitle: "Mesh"
-logo: "logo.png"
+#logo: "logo.png"
 icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
