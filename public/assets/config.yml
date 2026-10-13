@@ -15,33 +15,39 @@ theme: default
 
 # Optional theme customization (color overrrides)
 # overrrides can also be done using CSS vars
+# Palette: Figma "Salt and pepper" (Combination 56)
+#   #FFFFFF (salt) / #D4D4D4 / #B3B3B3 / #2B2B2B (pepper)
+# The two intermediate grays below (#4A4A4A, #6E6E6E) are pepper tints,
+# needed so white text stays readable on the header / navbar / search field.
 colors:
   light:
-    highlight-primary: "#3367d6"
-    highlight-secondary: "#4285f4"
-    highlight-hover: "#5a95f5"
-    background: "#f5f5f5"
-    card-background: "#ffffff"
-    text: "#363636"
-    text-header: "#ffffff"
-    text-title: "#303030"
-    text-subtitle: "#424242"
-    card-shadow: rgba(0, 0, 0, 0.1)
-    link: "#3273dc"
-    link-hover: "#363636"
-  dark:
+    # pepper chrome (header, navbar, tags) on a light-gray canvas
     highlight-primary: "#2B2B2B"
-    highlight-secondary: "#3B3B3B"
-    highlight-hover: "#D4D4D4"
+    highlight-secondary: "#4A4A4A"
+    highlight-hover: "#6E6E6E"
+    background: "#D4D4D4"
+    card-background: "#FFFFFF"
+    text: "#2B2B2B"
+    text-header: "#FFFFFF"
+    text-title: "#2B2B2B"
+    text-subtitle: "#5A5A5A"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#4A4A4A"
+    link-hover: "#2B2B2B"
+  dark:
+    # salt canvas inverted: pepper cards, gray chrome
+    highlight-primary: "#5A5A5A"
+    highlight-secondary: "#4A4A4A"
+    highlight-hover: "#6E6E6E"
     background: "#131313"
-    card-background: "#2b2b2b"
-    text: "#eaeaea"
-    text-header: "#ffffff"
-    text-title: "#fafafa"
-    text-subtitle: "#f5f5f5"
+    card-background: "#2B2B2B"
+    text: "#D4D4D4"
+    text-header: "#FFFFFF"
+    text-title: "#FFFFFF"
+    text-subtitle: "#B3B3B3"
     card-shadow: rgba(0, 0, 0, 0.4)
-    link: "#3273dc"
-    link-hover: "#ffdd57"
+    link: "#D4D4D4"
+    link-hover: "#FFFFFF"
 
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
