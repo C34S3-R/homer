@@ -15,49 +15,57 @@ theme: default
 
 # Optional theme customization (color overrrides)
 # overrrides can also be done using CSS vars
-# Palette: Figma "Salt and pepper" (Combination 56)
-#   #FFFFFF (salt) / #D4D4D4 / #B3B3B3 / #2B2B2B (pepper)
-# The two intermediate grays below (#4A4A4A, #6E6E6E) are pepper tints,
-# needed so white text stays readable on the header / navbar / search field.
+# ----------------------------------------------------------------------------
+# Shared "indigo lab" palette - the same tokens the Modz Vehicle Lab UI uses,
+# so the dashboard and the tool read as one product:
+#   accent #5B8CFF (indigo) / accent-2 #9B6CFF (violet)
+#   dark canvas #0B0E13 / dark card #141923 / dark text #E9ECF4
+#   light canvas #EDF1FB / light card #FFFFFF / light text #1A2131
+# Chrome (header/navbar/tags/search) uses the DEEP indigo in both modes, never
+# the bright accent: Homer hardcodes white text on it, and #2F3E7A keeps that
+# at 9.9:1 (the bright #5B8CFF would drop it to ~2.6:1).
 colors:
   light:
-    # pepper chrome (header, navbar, tags) on a light-gray canvas
-    highlight-primary: "#2B2B2B"
-    highlight-secondary: "#4A4A4A"
-    highlight-hover: "#6E6E6E"
-    background: "#D4D4D4"
+    # deep-indigo chrome, tinted canvas, white cards
+    highlight-primary: "#2F3E7A"
+    highlight-secondary: "#40549E"
+    highlight-hover: "#3A4C93"
+    background: "#EDF1FB"
     card-background: "#FFFFFF"
-    text: "#2B2B2B"
+    text: "#1A2131"
     text-header: "#FFFFFF"
-    text-title: "#2B2B2B"
-    text-subtitle: "#5A5A5A"
-    card-shadow: rgba(0, 0, 0, 0.1)
-    link: "#4A4A4A"
-    link-hover: "#2B2B2B"
+    text-title: "#101728"
+    text-subtitle: "#4C566B"
+    card-shadow: rgba(20, 30, 60, 0.10)
+    link: "#3B5BDB"
+    link-hover: "#2F3E7A"
   dark:
-    # salt canvas inverted: pepper cards, gray chrome
-    highlight-primary: "#5A5A5A"
-    highlight-secondary: "#4A4A4A"
-    highlight-hover: "#6E6E6E"
-    background: "#131313"
-    card-background: "#2B2B2B"
-    text: "#D4D4D4"
+    # identical to modz website/style.css :root (dark mode)
+    highlight-primary: "#2F3E7A"
+    highlight-secondary: "#40549E"
+    highlight-hover: "#3A4C93"
+    background: "#0B0E13"
+    card-background: "#141923"
+    text: "#E9ECF4"
     text-header: "#FFFFFF"
-    text-title: "#FFFFFF"
-    text-subtitle: "#B3B3B3"
-    card-shadow: rgba(0, 0, 0, 0.4)
-    link: "#D4D4D4"
-    link-hover: "#FFFFFF"
+    text-title: "#F2F5FC"
+    text-subtitle: "#97A1B4"
+    card-shadow: rgba(0, 0, 0, 0.45)
+    link: "#5B8CFF"
+    link-hover: "#9B6CFF"
 
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Contribute"
-    icon: "fab fa-github"
-    url: "https://github.com/C34S3-R/homer"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
+  - #name: "Contribute"
+    #icon: "fab fa-github"
+    #url: "https://github.com/C34S3-R/homer"
+    #target: "_blank" # optional html a tag target attribute
+  - #name: "Wiki"
+   # icon: "fas fa-book"
+    #url: "https://www.wikipedia.org/"
+
+
+
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:
   #- name: "another page!"

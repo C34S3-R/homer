@@ -295,7 +295,7 @@
       bottom: 0;
       padding: 0.5rem;
       text-align: left;
-      color: #676767;
+      color: var(--text-subtitle);
       font-size: 0.85rem;
       transition: background-color cubic-bezier(0.165, 0.84, 0.44, 1) 300ms;
     }
@@ -361,7 +361,7 @@
         line-height: 1rem;
         vertical-align: middle;
         cursor: pointer;
-        color: #3273dc;
+        color: var(--link);
       }
     }
   }

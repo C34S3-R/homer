@@ -200,16 +200,8 @@ export default {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: linear-gradient(120deg, #eef2ff, #b9c9ff 70%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-// Gradient headlines are built for dark surfaces: fall back to plain
-// theme text when Homer runs in light mode so numbers stay readable.
-:global(#app.light) .sysstats-value {
-  background: none;
+  // Follows the active palette instead of a hardcoded gradient, so the
+  // numbers stay readable in light mode and in any theme color set.
   color: var(--text-title);
 }
 
@@ -236,15 +228,17 @@ export default {
   height: 6px;
   border-radius: 999px;
   overflow: hidden;
-  background: rgba(127, 140, 160, 0.25);
+  background: rgba(127, 127, 127, 0.25);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 .sysstats-meter > div {
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #5b8cff, #9b6cff);
-  box-shadow: 0 0 10px -2px rgba(91, 140, 255, 0.45);
+  // Palette accent (deep indigo in both modes) instead of a fixed
+  // blue/violet gradient, so the meter tracks the dashboard theme.
+  background: var(--highlight-secondary);
+  box-shadow: 0 0 10px -2px var(--highlight-secondary);
   transition: width 0.7s ease;
 }
 
