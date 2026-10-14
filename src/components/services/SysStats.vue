@@ -235,8 +235,7 @@ export default {
 .sysstats-meter > div {
   height: 100%;
   border-radius: inherit;
-  // Palette accent (deep indigo in both modes) instead of a fixed
-  // blue/violet gradient, so the meter tracks the dashboard theme.
+  // Palette accent (olive in both modes) instead of a fixed blue/violet.
   background: var(--highlight-secondary);
   box-shadow: 0 0 10px -2px var(--highlight-secondary);
   transition: width 0.7s ease;

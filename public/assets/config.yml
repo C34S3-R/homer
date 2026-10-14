@@ -15,44 +15,39 @@ theme: default
 
 # Optional theme customization (color overrrides)
 # overrrides can also be done using CSS vars
-# ----------------------------------------------------------------------------
-# Shared "indigo lab" palette - the same tokens the Modz Vehicle Lab UI uses,
-# so the dashboard and the tool read as one product:
-#   accent #5B8CFF (indigo) / accent-2 #9B6CFF (violet)
-#   dark canvas #0B0E13 / dark card #141923 / dark text #E9ECF4
-#   light canvas #EDF1FB / light card #FFFFFF / light text #1A2131
-# Chrome (header/navbar/tags/search) uses the DEEP indigo in both modes, never
-# the bright accent: Homer hardcodes white text on it, and #2F3E7A keeps that
-# at 9.9:1 (the bright #5B8CFF would drop it to ~2.6:1).
+# One palette for the whole homepage, light and dark:
+#   #3D4127 dark olive - #636B2F olive - #BAC095 sage - #D4DE95 lime
+# Chrome (header/navbar/tags/search) always uses the two dark olives so the
+# hardcoded white text Homer puts on them stays readable (>=5.7:1).
 colors:
   light:
-    # deep-indigo chrome, tinted canvas, white cards
-    highlight-primary: "#2F3E7A"
-    highlight-secondary: "#40549E"
-    highlight-hover: "#3A4C93"
-    background: "#EDF1FB"
+    # olive chrome, sage canvas, white cards
+    highlight-primary: "#3D4127"
+    highlight-secondary: "#636B2F"
+    highlight-hover: "#3D4127"
+    background: "#BAC095"
     card-background: "#FFFFFF"
-    text: "#1A2131"
+    text: "#3D4127"
     text-header: "#FFFFFF"
-    text-title: "#101728"
-    text-subtitle: "#4C566B"
-    card-shadow: rgba(20, 30, 60, 0.10)
-    link: "#3B5BDB"
-    link-hover: "#2F3E7A"
+    text-title: "#3D4127"
+    text-subtitle: "#636B2F"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3D4127"
+    link-hover: "#636B2F"
   dark:
-    # identical to modz website/style.css :root (dark mode)
-    highlight-primary: "#2F3E7A"
-    highlight-secondary: "#40549E"
-    highlight-hover: "#3A4C93"
-    background: "#0B0E13"
-    card-background: "#141923"
-    text: "#E9ECF4"
+    # charcoal canvas, olive cards, olive chrome
+    highlight-primary: "#636B2F"
+    highlight-secondary: "#636B2F"
+    highlight-hover: "#3D4127"
+    background: "#2B2B2B"
+    card-background: "#3D4127"
+    text: "#D4D4D4"
     text-header: "#FFFFFF"
-    text-title: "#F2F5FC"
-    text-subtitle: "#97A1B4"
-    card-shadow: rgba(0, 0, 0, 0.45)
-    link: "#5B8CFF"
-    link-hover: "#9B6CFF"
+    text-title: "#FFFFFF"
+    text-subtitle: "#BAC095"
+    card-shadow: rgba(0, 0, 0, 0.4)
+    link: "#BAC095"
+    link-hover: "#D4DE95"
 
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
