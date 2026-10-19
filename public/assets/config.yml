@@ -93,6 +93,11 @@ services:
         subtitle: "An app that tracks your building collaboration with a friend"
         tag: "Streak"
         url: "https://delllatitude-e6410.tailc3384f.ts.net/"
+      - name: "StudyHub"
+        icon: "fa-solid fa-graduation-cap"
+        subtitle: "Timetable + focus blocks - open, then Add to Home screen"
+        tag: "study"
+        url: "https://delllatitude-e6410.tailc3384f.ts.net:8444/"
   - name: "Media"
     icon: "fas fa-clapperboard"
     items:
